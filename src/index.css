@@ -1,5 +1,63 @@
+:root {
+  --appBackground: #ccd5ae;
+  --secondaryBackground: #e9edc9;
+  --componentBg: #fefae0;
+  --hoverBtn: #ffc300;
+  --Btn: #ffd60a;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: "Iranian Sans";
+  src: url("Iranian Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+body {
+  font-family: "Iranian Sans", sans-serif;
+  background: var(--appBackground);
+  height: 100vh;
+  color: azure;
+}
+main {
+  background: var(--secondaryBackground);
+  width: 1000px;
+  height: 100vh;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+header {
+  background: var(--componentBg);
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 100%;
+  color: #3f4238;
+  border-radius: 1rem;
+}
+header div p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.img-container {
+  width: 100%;
+}
+header div img {
+  width: 60%;
+}
+nav {
+  grid-column: 1/-1;
+  align-items: start;
+  justify-self: start;
 }
